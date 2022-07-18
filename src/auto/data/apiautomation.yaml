@@ -1,5 +1,5 @@
 DIR:
-  JSON: 'C:/Users/user/Desktop/API DOJO/Dojo-API_Automation/src/auto/data/cadastro.json'
+  JSON: '\src\auto\data\cadastro.json'
 
 DATA:
   ID: 'id'

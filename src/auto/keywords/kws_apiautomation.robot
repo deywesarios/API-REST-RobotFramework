@@ -37,7 +37,7 @@ Conferir se retorna todos os dados corretos do livro 20
     ${TITLE}                Get From Dictionary           ${JSON_DATA}           ${DATA.TITLE}
     ${PUBLISH_DATE}         Get From Dictionary           ${JSON_DATA}           ${DATA.PUBLISH_DATE}
 Cadastrar um novo livro
-    ${JSON}                 Format String                  ${DIR.JSON}
+    ${JSON}                 Format String                  ${EXECDIR}${DIR.JSON}
     ${SCHEMA_BODY}          Convert String to JSON         ${JSON}
 
     ${RESPOSTA}             POST On Session                ${API_BOOKS.ALIAS}            ${API_BOOKS.ENDPOINT}        json=${SCHEMA_BODY}
